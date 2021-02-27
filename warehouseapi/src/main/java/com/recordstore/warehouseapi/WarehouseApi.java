@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class WarehouseApi {
 
-	public static void main(String[] args) {
-		SpringApplication.run(WarehouseApi.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(WarehouseApi.class, args);
+    }
 
 }
