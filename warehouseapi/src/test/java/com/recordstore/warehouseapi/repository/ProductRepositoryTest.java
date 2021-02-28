@@ -34,7 +34,7 @@ class ProductRepositoryTest {
     }
 
     @Test
-    public void givenOneProductAdded_WhenFindById_ThenReturnAddedProduct() {
+    void givenOneProductAdded_whenFindById_thenReturnAddedProduct() {
 
         // Given
         productRepository.save(product);
@@ -46,7 +46,7 @@ class ProductRepositoryTest {
     }
 
     @Test
-    public void givenTwoProductsAdded_WhenFindAll_ThenReturnProductsSaved() {
+    void givenTwoProductsAdded_whenFindAll_thenReturnProductsSaved() {
 
         // Given
         Product product1 = new Product(1, "firstProduct", 400.0f);
@@ -63,7 +63,7 @@ class ProductRepositoryTest {
     }
 
     @Test
-    public void givenProductSaved_WhenFindById_ThenReturnProductOfThatId() {
+    void givenProductSaved_whenFindById_thenReturnProductOfThatId() {
 
         // Given
         Product product1 = new Product(1, "aProduct", 3000.0f);
@@ -77,7 +77,7 @@ class ProductRepositoryTest {
     }
 
     @Test
-    public void givenProductSaved_WhenDeleteByHisId_ThenShouldDeleteTheProduct() {
+    void givenProductSaved_whenDeleteByHisId_thenShouldDeleteTheProduct() {
 
         // Given
         Product product = new Product(4, "aProduct", 160.0f);

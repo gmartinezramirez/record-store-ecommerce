@@ -50,7 +50,7 @@ class ProductServiceTest {
     }
 
     @Test
-    void givenProductToAdd_WhenAddTheProduct_ThenReturnAddedProduct() {
+    void givenProductToAdd_whenAddTheProduct_thenReturnAddedProduct() {
 
         // Given
         when(productRepository.save(any())).thenReturn(product1);
@@ -62,7 +62,7 @@ class ProductServiceTest {
     }
 
     @Test
-    void givenFindAllProducts_WhenGetAllProducts_ThenReturnListOfAllProducts() {
+    void givenFindAllProducts_whenGetAllProducts_thenReturnListOfAllProducts() {
 
         // Given
         productRepository.save(product1);
@@ -79,7 +79,7 @@ class ProductServiceTest {
     }
 
     @Test
-    void givenProductId_WhenFindById_ThenShouldReturnProductOfThatId() {
+    void givenProductId_whenFindById_thenShouldReturnProductOfThatId() {
 
         // Given
         when(productRepository.findById(1)).thenReturn(Optional.ofNullable(product1));

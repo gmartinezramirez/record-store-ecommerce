@@ -53,7 +53,7 @@ class ProductControllerTest {
     }
 
     @Test
-    void givenAValidProductRequest_WhenControllerIsCalled_ThenReturnAValidCreatedStatus() throws Exception {
+    void givenAValidProductRequest_whenControllerIsCalled_thenReturnAValidCreatedStatus() throws Exception {
 
         when(productService.addProduct(any())).thenReturn(product);
 
